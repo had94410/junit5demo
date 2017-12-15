@@ -1,0 +1,8 @@
+実行コマンド
+gradle -q junit5Test
+
+projectroot/
+    |_files
+       |_*.java
+src/javaｿｿｿｿｿｿ*.javaｿｿｿｿｿｿｿｿｿｿｿｿｿｿｿｿｿｿｿｿｿｿｿｿｿｿｿｿｿｿ
+

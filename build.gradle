@@ -1,0 +1,55 @@
+buildscript {
+	ext {
+		springBootVersion = '1.5.10.BUILD-SNAPSHOT'
+	}
+	repositories {
+		mavenCentral()
+		maven { url "https://repo.spring.io/snapshot" }
+		maven { url "https://repo.spring.io/milestone" }
+		
+	}
+
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+    dependencies {
+        classpath 'org.junit:junit-gradle:5.0.0-SNAPSHOT'
+    }
+}
+
+buildscript {
+    repositories {
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    }
+    dependencies {
+        classpath 'org.junit:junit-gradle:5.0.0-SNAPSHOT'
+    }
+}
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'org.junit.gen5.gradle'
+
+group = 'com.everglowtrading'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+	maven { url "https://repo.spring.io/snapshot" }
+	maven { url "https://repo.spring.io/milestone" }
+}
+
+
+dependencies {
+	compile('org.springframework.boot:spring-boot-starter')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+dependencies {
+    testCompile 'org.junit:junit5-api:5.0.0-ALPHA'
+}
+
+junit5 {
+    version '5.0.0-ALPHA'
+}
