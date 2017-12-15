@@ -1,8 +1,8 @@
-ŽÀsƒRƒ}ƒ“ƒh
+å®Ÿè¡Œã‚³ãƒžãƒ³ãƒ‰
 gradle -q junit5Test
 
 projectroot/
     |_files
        |_*.java
-src/java¿¿¿¿¿¿*.java¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿
+src/javaã®ã‚½ãƒ¼ã‚¹ã«ä¸Šè¨˜ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç½®ãæ›ãˆã‚‹ã¨é•ã†ãƒ†ã‚¹ãƒˆãŒã§ãã¾ã™ã€‚
 
